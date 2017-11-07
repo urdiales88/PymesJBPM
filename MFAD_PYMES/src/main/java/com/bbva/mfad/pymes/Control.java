@@ -11,7 +11,6 @@ public class Control implements java.io.Serializable {
 	private java.lang.String customId;
 	private java.lang.String cdTarea;
 	private java.lang.String mesa;
-	private java.lang.String estados;
 	private java.lang.String fechaRadicacion;
 	private java.lang.String fechaExpiracion;
 	private java.lang.String fechaActualizacion;
@@ -20,6 +19,8 @@ public class Control implements java.io.Serializable {
 	private java.lang.String usuarioRecepcion;
 	private java.lang.String usuarioFiltros;
 	private java.lang.String usuarioAnalisisSancion;
+
+	private java.lang.String estado;
 
 	public Control() {
 	}
@@ -46,14 +47,6 @@ public class Control implements java.io.Serializable {
 
 	public void setMesa(java.lang.String mesa) {
 		this.mesa = mesa;
-	}
-
-	public java.lang.String getEstados() {
-		return this.estados;
-	}
-
-	public void setEstados(java.lang.String estados) {
-		this.estados = estados;
 	}
 
 	public java.lang.String getFechaRadicacion() {
@@ -121,18 +114,25 @@ public class Control implements java.io.Serializable {
 		this.usuarioAnalisisSancion = usuarioAnalisisSancion;
 	}
 
+	public java.lang.String getEstado() {
+		return this.estado;
+	}
+
+	public void setEstado(java.lang.String estado) {
+		this.estado = estado;
+	}
+
 	public Control(java.lang.String customId, java.lang.String cdTarea,
-			java.lang.String mesa, java.lang.String estados,
-			java.lang.String fechaRadicacion, java.lang.String fechaExpiracion,
+			java.lang.String mesa, java.lang.String fechaRadicacion,
+			java.lang.String fechaExpiracion,
 			java.lang.String fechaActualizacion,
 			java.lang.String usuarioEjecutivo,
 			java.lang.String usuarioExclusion,
 			java.lang.String usuarioRecepcion, java.lang.String usuarioFiltros,
-			java.lang.String usuarioAnalisisSancion) {
+			java.lang.String usuarioAnalisisSancion, java.lang.String estado) {
 		this.customId = customId;
 		this.cdTarea = cdTarea;
 		this.mesa = mesa;
-		this.estados = estados;
 		this.fechaRadicacion = fechaRadicacion;
 		this.fechaExpiracion = fechaExpiracion;
 		this.fechaActualizacion = fechaActualizacion;
@@ -141,6 +141,7 @@ public class Control implements java.io.Serializable {
 		this.usuarioRecepcion = usuarioRecepcion;
 		this.usuarioFiltros = usuarioFiltros;
 		this.usuarioAnalisisSancion = usuarioAnalisisSancion;
+		this.estado = estado;
 	}
 
 }
