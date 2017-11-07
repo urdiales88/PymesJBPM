@@ -6,12 +6,34 @@ package com.bbva.mfad.pymes;
 
 public class riesgos implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public riesgos() {
-    }
+	private java.lang.String riesgoComercial;
+	private java.lang.String riesgoPotencial;
 
+	public riesgos() {
+	}
 
+	public java.lang.String getRiesgoComercial() {
+		return this.riesgoComercial;
+	}
 
+	public void setRiesgoComercial(java.lang.String riesgoComercial) {
+		this.riesgoComercial = riesgoComercial;
+	}
+
+	public java.lang.String getRiesgoPotencial() {
+		return this.riesgoPotencial;
+	}
+
+	public void setRiesgoPotencial(java.lang.String riesgoPotencial) {
+		this.riesgoPotencial = riesgoPotencial;
+	}
+
+	public riesgos(java.lang.String riesgoComercial,
+			java.lang.String riesgoPotencial) {
+		this.riesgoComercial = riesgoComercial;
+		this.riesgoPotencial = riesgoPotencial;
+	}
 
 }
