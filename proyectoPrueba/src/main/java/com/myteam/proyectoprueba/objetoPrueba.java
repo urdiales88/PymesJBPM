@@ -8,6 +8,7 @@ public class objetoPrueba implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	@org.kie.api.definition.type.Label("nombre")
 	private java.lang.String nombre;
 
 	public objetoPrueba() {
