@@ -6,12 +6,55 @@ package com.myteam.pruebafront;
 
 public class DatosPrueba implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DatosPrueba() {
-    }
+	private java.lang.String nombre;
+	private java.lang.String apellidoPaterno;
+	private java.lang.String apellidoMaterno;
+	private java.util.List<java.lang.Integer> telefonos;
 
+	public DatosPrueba() {
+	}
 
+	public java.lang.String getNombre() {
+		return this.nombre;
+	}
 
+	public void setNombre(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
+
+	public java.lang.String getApellidoPaterno() {
+		return this.apellidoPaterno;
+	}
+
+	public void setApellidoPaterno(java.lang.String apellidoPaterno) {
+		this.apellidoPaterno = apellidoPaterno;
+	}
+
+	public java.lang.String getApellidoMaterno() {
+		return this.apellidoMaterno;
+	}
+
+	public void setApellidoMaterno(java.lang.String apellidoMaterno) {
+		this.apellidoMaterno = apellidoMaterno;
+	}
+
+	public java.util.List<java.lang.Integer> getTelefonos() {
+		return this.telefonos;
+	}
+
+	public void setTelefonos(java.util.List<java.lang.Integer> telefonos) {
+		this.telefonos = telefonos;
+	}
+
+	public DatosPrueba(java.lang.String nombre,
+			java.lang.String apellidoPaterno, java.lang.String apellidoMaterno,
+			java.util.List<java.lang.Integer> telefonos) {
+		this.nombre = nombre;
+		this.apellidoPaterno = apellidoPaterno;
+		this.apellidoMaterno = apellidoMaterno;
+		this.telefonos = telefonos;
+	}
 
 }
