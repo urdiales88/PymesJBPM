@@ -6,12 +6,23 @@ package com.myteam.proyectoprueba;
 
 public class objetoPrueba implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public objetoPrueba() {
-    }
+	private java.lang.String nombre;
 
+	public objetoPrueba() {
+	}
 
+	public java.lang.String getNombre() {
+		return this.nombre;
+	}
 
+	public void setNombre(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
+
+	public objetoPrueba(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
 
 }
