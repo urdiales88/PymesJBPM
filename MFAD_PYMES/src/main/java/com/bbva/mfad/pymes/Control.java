@@ -6,12 +6,141 @@ package com.bbva.mfad.pymes;
 
 public class Control implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Control() {
-    }
+	private java.lang.String customId;
+	private java.lang.String cdTarea;
+	private java.lang.String mesa;
+	private java.lang.String estados;
+	private java.lang.String fechaRadicacion;
+	private java.lang.String fechaExpiracion;
+	private java.lang.String fechaActualizacion;
+	private java.lang.String usuarioEjecutivo;
+	private java.lang.String usuarioExclusion;
+	private java.lang.String usuarioRecepcion;
+	private java.lang.String usuarioFiltros;
+	private java.lang.String usuarioAnalisisSancion;
 
+	public Control() {
+	}
 
+	public java.lang.String getCustomId() {
+		return this.customId;
+	}
 
+	public void setCustomId(java.lang.String customId) {
+		this.customId = customId;
+	}
+
+	public java.lang.String getCdTarea() {
+		return this.cdTarea;
+	}
+
+	public void setCdTarea(java.lang.String cdTarea) {
+		this.cdTarea = cdTarea;
+	}
+
+	public java.lang.String getMesa() {
+		return this.mesa;
+	}
+
+	public void setMesa(java.lang.String mesa) {
+		this.mesa = mesa;
+	}
+
+	public java.lang.String getEstados() {
+		return this.estados;
+	}
+
+	public void setEstados(java.lang.String estados) {
+		this.estados = estados;
+	}
+
+	public java.lang.String getFechaRadicacion() {
+		return this.fechaRadicacion;
+	}
+
+	public void setFechaRadicacion(java.lang.String fechaRadicacion) {
+		this.fechaRadicacion = fechaRadicacion;
+	}
+
+	public java.lang.String getFechaExpiracion() {
+		return this.fechaExpiracion;
+	}
+
+	public void setFechaExpiracion(java.lang.String fechaExpiracion) {
+		this.fechaExpiracion = fechaExpiracion;
+	}
+
+	public java.lang.String getFechaActualizacion() {
+		return this.fechaActualizacion;
+	}
+
+	public void setFechaActualizacion(java.lang.String fechaActualizacion) {
+		this.fechaActualizacion = fechaActualizacion;
+	}
+
+	public java.lang.String getUsuarioEjecutivo() {
+		return this.usuarioEjecutivo;
+	}
+
+	public void setUsuarioEjecutivo(java.lang.String usuarioEjecutivo) {
+		this.usuarioEjecutivo = usuarioEjecutivo;
+	}
+
+	public java.lang.String getUsuarioExclusion() {
+		return this.usuarioExclusion;
+	}
+
+	public void setUsuarioExclusion(java.lang.String usuarioExclusion) {
+		this.usuarioExclusion = usuarioExclusion;
+	}
+
+	public java.lang.String getUsuarioRecepcion() {
+		return this.usuarioRecepcion;
+	}
+
+	public void setUsuarioRecepcion(java.lang.String usuarioRecepcion) {
+		this.usuarioRecepcion = usuarioRecepcion;
+	}
+
+	public java.lang.String getUsuarioFiltros() {
+		return this.usuarioFiltros;
+	}
+
+	public void setUsuarioFiltros(java.lang.String usuarioFiltros) {
+		this.usuarioFiltros = usuarioFiltros;
+	}
+
+	public java.lang.String getUsuarioAnalisisSancion() {
+		return this.usuarioAnalisisSancion;
+	}
+
+	public void setUsuarioAnalisisSancion(
+			java.lang.String usuarioAnalisisSancion) {
+		this.usuarioAnalisisSancion = usuarioAnalisisSancion;
+	}
+
+	public Control(java.lang.String customId, java.lang.String cdTarea,
+			java.lang.String mesa, java.lang.String estados,
+			java.lang.String fechaRadicacion, java.lang.String fechaExpiracion,
+			java.lang.String fechaActualizacion,
+			java.lang.String usuarioEjecutivo,
+			java.lang.String usuarioExclusion,
+			java.lang.String usuarioRecepcion, java.lang.String usuarioFiltros,
+			java.lang.String usuarioAnalisisSancion) {
+		this.customId = customId;
+		this.cdTarea = cdTarea;
+		this.mesa = mesa;
+		this.estados = estados;
+		this.fechaRadicacion = fechaRadicacion;
+		this.fechaExpiracion = fechaExpiracion;
+		this.fechaActualizacion = fechaActualizacion;
+		this.usuarioEjecutivo = usuarioEjecutivo;
+		this.usuarioExclusion = usuarioExclusion;
+		this.usuarioRecepcion = usuarioRecepcion;
+		this.usuarioFiltros = usuarioFiltros;
+		this.usuarioAnalisisSancion = usuarioAnalisisSancion;
+	}
 
 }
