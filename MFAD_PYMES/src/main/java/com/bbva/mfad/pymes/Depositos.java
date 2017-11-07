@@ -6,12 +6,55 @@ package com.bbva.mfad.pymes;
 
 public class Depositos implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Depositos() {
-    }
+	private java.lang.String fechaInicial;
+	private java.lang.String fechaFinal;
+	private java.lang.String banco;
+	private java.lang.String valorDeposito;
 
+	public Depositos() {
+	}
 
+	public java.lang.String getFechaInicial() {
+		return this.fechaInicial;
+	}
 
+	public void setFechaInicial(java.lang.String fechaInicial) {
+		this.fechaInicial = fechaInicial;
+	}
+
+	public java.lang.String getFechaFinal() {
+		return this.fechaFinal;
+	}
+
+	public void setFechaFinal(java.lang.String fechaFinal) {
+		this.fechaFinal = fechaFinal;
+	}
+
+	public java.lang.String getBanco() {
+		return this.banco;
+	}
+
+	public void setBanco(java.lang.String banco) {
+		this.banco = banco;
+	}
+
+	public java.lang.String getValorDeposito() {
+		return this.valorDeposito;
+	}
+
+	public void setValorDeposito(java.lang.String valorDeposito) {
+		this.valorDeposito = valorDeposito;
+	}
+
+	public Depositos(java.lang.String fechaInicial,
+			java.lang.String fechaFinal, java.lang.String banco,
+			java.lang.String valorDeposito) {
+		this.fechaInicial = fechaInicial;
+		this.fechaFinal = fechaFinal;
+		this.banco = banco;
+		this.valorDeposito = valorDeposito;
+	}
 
 }
