@@ -10,7 +10,7 @@ public class VentasAnuales implements java.io.Serializable {
 
 	private java.lang.String ventasAnuales;
 	private java.lang.String segmentacionCliente;
-	private com.bbva.mfad.pymes.Depositos depositos;
+	private java.util.List<com.bbva.mfad.pymes.Depositos> depositos;
 
 	public VentasAnuales() {
 	}
@@ -31,17 +31,18 @@ public class VentasAnuales implements java.io.Serializable {
 		this.segmentacionCliente = segmentacionCliente;
 	}
 
-	public com.bbva.mfad.pymes.Depositos getDepositos() {
+	public java.util.List<com.bbva.mfad.pymes.Depositos> getDepositos() {
 		return this.depositos;
 	}
 
-	public void setDepositos(com.bbva.mfad.pymes.Depositos depositos) {
+	public void setDepositos(
+			java.util.List<com.bbva.mfad.pymes.Depositos> depositos) {
 		this.depositos = depositos;
 	}
 
 	public VentasAnuales(java.lang.String ventasAnuales,
 			java.lang.String segmentacionCliente,
-			com.bbva.mfad.pymes.Depositos depositos) {
+			java.util.List<com.bbva.mfad.pymes.Depositos> depositos) {
 		this.ventasAnuales = ventasAnuales;
 		this.segmentacionCliente = segmentacionCliente;
 		this.depositos = depositos;
