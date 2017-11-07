@@ -11,8 +11,6 @@ public class DatosPrueba implements java.io.Serializable {
 	private java.lang.String nombre;
 	private java.lang.String apellidoPaterno;
 	private java.lang.String apellidoMaterno;
-	private java.util.List<java.lang.Integer> telefonos;
-
 	public DatosPrueba() {
 	}
 
@@ -40,21 +38,11 @@ public class DatosPrueba implements java.io.Serializable {
 		this.apellidoMaterno = apellidoMaterno;
 	}
 
-	public java.util.List<java.lang.Integer> getTelefonos() {
-		return this.telefonos;
-	}
-
-	public void setTelefonos(java.util.List<java.lang.Integer> telefonos) {
-		this.telefonos = telefonos;
-	}
-
 	public DatosPrueba(java.lang.String nombre,
-			java.lang.String apellidoPaterno, java.lang.String apellidoMaterno,
-			java.util.List<java.lang.Integer> telefonos) {
+			java.lang.String apellidoPaterno, java.lang.String apellidoMaterno) {
 		this.nombre = nombre;
 		this.apellidoPaterno = apellidoPaterno;
 		this.apellidoMaterno = apellidoMaterno;
-		this.telefonos = telefonos;
 	}
 
 }
