@@ -6,12 +6,33 @@ package com.bbva.mfad.pymes;
 
 public class Productos implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Productos() {
-    }
+	private java.lang.String folioProducto;
+	private java.lang.String estado;
 
+	public Productos() {
+	}
 
+	public java.lang.String getFolioProducto() {
+		return this.folioProducto;
+	}
 
+	public void setFolioProducto(java.lang.String folioProducto) {
+		this.folioProducto = folioProducto;
+	}
+
+	public java.lang.String getEstado() {
+		return this.estado;
+	}
+
+	public void setEstado(java.lang.String estado) {
+		this.estado = estado;
+	}
+
+	public Productos(java.lang.String folioProducto, java.lang.String estado) {
+		this.folioProducto = folioProducto;
+		this.estado = estado;
+	}
 
 }
