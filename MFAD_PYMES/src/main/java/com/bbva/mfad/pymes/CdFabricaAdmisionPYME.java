@@ -6,12 +6,34 @@ package com.bbva.mfad.pymes;
 
 public class CdFabricaAdmisionPYME implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CdFabricaAdmisionPYME() {
-    }
+	private com.bbva.mfad.pymes.Control control;
+	private com.bbva.mfad.pymes.SolicitudPYME solicitudPYME;
 
+	public CdFabricaAdmisionPYME() {
+	}
 
+	public com.bbva.mfad.pymes.Control getControl() {
+		return this.control;
+	}
 
+	public void setControl(com.bbva.mfad.pymes.Control control) {
+		this.control = control;
+	}
+
+	public com.bbva.mfad.pymes.SolicitudPYME getSolicitudPYME() {
+		return this.solicitudPYME;
+	}
+
+	public void setSolicitudPYME(com.bbva.mfad.pymes.SolicitudPYME solicitudPYME) {
+		this.solicitudPYME = solicitudPYME;
+	}
+
+	public CdFabricaAdmisionPYME(com.bbva.mfad.pymes.Control control,
+			com.bbva.mfad.pymes.SolicitudPYME solicitudPYME) {
+		this.control = control;
+		this.solicitudPYME = solicitudPYME;
+	}
 
 }
