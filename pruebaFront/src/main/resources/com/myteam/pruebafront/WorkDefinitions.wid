@@ -1,0 +1,64 @@
+[
+  [
+     "name" : "BusinessRuleTask",
+     "parameters" : [
+       "Language" : new StringDataType(),
+       "KieSessionName" : new StringDataType(),
+       "KieSessionType" : new StringDataType()
+     ],
+     "displayName" : "Business Rule Task",
+     "icon" : "defaultbusinessrulesicon.png",
+     "category" : "Decision tasks"
+   ],
+
+   [
+     "name" : "DecisionTask",
+     "parameters" : [
+       "Language" : new StringDataType(),
+       "Namespace" : new StringDataType(),
+       "Model" : new StringDataType(),
+       "Decision" : new StringDataType()
+     ],
+     "displayName" : "Decision Task",
+     "icon" : "defaultdecisionicon.png",
+     "category" : "Decision tasks"
+   ],
+
+  [
+   "name":"ASO_Service",
+   "parameters":[
+     "EndPoint" : new StringDataType(),
+     "Path" : new StringDataType(),
+     "Method" : new StringDataType(),
+     "ContentType" : new StringDataType(),
+     "Data" : new ObjectDataType()
+
+
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+
+   ],
+   "displayName":"ASO_Service",
+   "icon":"img.gif"
+  ],
+  [
+   "name":"APX_Service",
+   "parameters":[
+     "EndPoint" : new StringDataType(),
+     "Path" : new StringDataType(),
+     "Method" : new StringDataType(),
+     "ContentType" : new StringDataType(),
+     "Data" : new ObjectDataType()
+
+
+   ],
+   "results":[
+      "Result":new ObjectDataType(),
+
+   ],
+   "displayName":"APX_Service",
+   "icon":"img.gif"
+  ]
+
+]
